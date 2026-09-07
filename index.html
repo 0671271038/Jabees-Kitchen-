@@ -4,46 +4,54 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JABEES KITCHEN | Fresh Food & Convenience</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FFFEFB;--black:#101828;--orange:#FF6B20;--green:#1DB954;--line:#F2E9E0;--wa:#25D366}
-body{margin:0;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--black)}
+:root{--bg:#FFFEFB;--black:#0F172A;--orange:#FF6B20;--orange2:#FF8A4A;--line:#F2E9E0;--wa:#25D366}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--black);-webkit-font-smoothing:antialiased}
 h1,h2,h3{font-family:'Playfair Display',serif}
-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);padding:12px 18px;display:flex;justify-content:space-between;align-items:center}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
 .logo-wrap{display:flex;align-items:center;gap:12px}
-.logo-img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
-.logo{font-weight:800;font-size:20px;letter-spacing:1.5px}
-.logo small{display:block;font-family:'Poppins';font-size:10px;letter-spacing:2px;color:var(--orange);font-weight:700;margin-top:2px}
-.wa-top{background:var(--wa);color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:12px}
-.banner{background:#101828;color:#FFD9C2;text-align:center;padding:10px;font-size:11px;letter-spacing:2.5px}
-.hero{max-width:1200px;margin:0 auto;padding:28px 18px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:18px;align-items:center}
+.logo-img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #FFD2B8;box-shadow:0 6px 18px rgba(255,107,32,0.22)}
+.logo{font-weight:800;font-size:20px;letter-spacing:1.2px;line-height:1}
+.logo small{display:block;font-family:'Poppins';font-size:9px;letter-spacing:3px;color:var(--orange);font-weight:700;margin-top:3px}
+.wa-top{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:12px;box-shadow:0 8px 22px rgba(37,211,102,0.32);transition:0.3s}
+.wa-top:hover{transform:translateY(-2px)}
+.banner{background:radial-gradient(120% 120% at 20% 0%,#1E293B 0%,#0F172A 70%);color:#FFE0CB;text-align:center;padding:11px;font-size:11px;letter-spacing:3px;border-bottom:1px solid rgba(255,107,32,0.2)}
+.hero{max-width:1240px;margin:0 auto;padding:36px 20px 24px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px;align-items:center}
 @media(max-width:800px){.hero{grid-template-columns:1fr}}
-.hero-text h1{font-size:42px;line-height:1.1;margin:0}
-.hero-text h1 span{color:var(--orange)}
-.hero-text p{color:#667085;font-size:14px;line-height:1.7;margin:12px 0 0}
-.hero-text .btns{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
-.btn-orange{background:var(--orange);color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px}
-.btn-dark{background:#101828;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px}
-.hero-img{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden}
-.hero-img img{width:100%;height:auto;display:block}
-.menu-box{max-width:1000px;margin:10px auto;background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.hero-text h1{font-size:48px;line-height:1.05;margin:0;letter-spacing:-0.5px}
+.hero-text h1 span{background:linear-gradient(135deg,var(--orange),#FFB07A);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-text p{color:#475569;font-size:14.5px;line-height:1.8;margin:14px 0 0;max-width:560px}
+.hero-text .btns{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.btn-orange{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 12px 28px rgba(255,107,32,0.3);transition:0.3s}
+.btn-orange:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(255,107,32,0.4)}
+.btn-dark{background:#0F172A;color:#fff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;border:1px solid rgba(255,255,255,0.08);transition:0.3s}
+.btn-dark:hover{background:#1E293B}
+.hero-img{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(15,23,42,0.08);padding:8px}
+.hero-img img{width:100%;height:auto;display:block;border-radius:20px}
+.menu-box{max-width:1000px;margin:10px auto;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,42,0.06);transition:0.4s}
+.menu-box:hover{box-shadow:0 26px 70px rgba(15,23,42,0.12);transform:translateY(-3px)}
 .menu-box img{width:100%;display:block;cursor:pointer}
-.menu-box .info{padding:16px;text-align:center}
+.menu-box .info{padding:18px;text-align:center;background:linear-gradient(180deg,#fff,#FFFEFB)}
 .menu-box .info h3{margin:0;font-size:22px}
-.grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;padding:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;text-align:center;padding-bottom:12px;transition:0.3s}
-.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
-.card img{width:100%;height:200px;object-fit:cover;cursor:pointer}
-.card h3{font-size:14px;margin:10px 8px 6px;min-height:28px}
-.price{background:#101828;color:#fff;display:inline-block;padding:6px 14px;border-radius:999px;font-weight:700;font-size:13px;margin-bottom:10px}
-.btn-wa{background:var(--wa);color:#fff;text-decoration:none;display:block;margin:0 10px;padding:11px;border-radius:999px;font-weight:700;font-size:12px}
-.section{max-width:1200px;margin:20px auto 0;padding:20px 18px 0;text-align:center}
-.section h2{font-size:32px;margin:0}
-.float-wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;text-decoration:none;box-shadow:0 8px 20px rgba(37,211,102,0.4);z-index:80}
-#lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.92);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px}
+.grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;padding:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;text-align:center;padding-bottom:13px;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);box-shadow:0 2px 0 rgba(15,23,42,0.02)}
+.card:hover{transform:translateY(-7px);box-shadow:0 24px 54px rgba(15,23,42,0.11);border-color:rgba(255,107,32,0.35)}
+.card img{width:100%;height:210px;object-fit:cover;cursor:pointer;transition:0.6s}
+.card:hover img{transform:scale(1.04)}
+.card h3{font-size:14px;margin:12px 10px 8px;min-height:28px;letter-spacing:0.2px}
+.price{background:linear-gradient(135deg,#0F172A,#1E293B);color:#fff;display:inline-block;padding:7px 15px;border-radius:999px;font-weight:700;font-size:12px;margin-bottom:12px;border:1px solid rgba(255,107,32,0.2);letter-spacing:0.5px}
+.btn-wa{background:#111827;color:#fff;text-decoration:none;display:block;margin:0 11px;padding:12px;border-radius:999px;font-weight:700;font-size:12px;transition:0.3s}
+.btn-wa:hover{background:var(--wa);box-shadow:0 10px 24px rgba(37,211,102,0.35)}
+.section{max-width:1200px;margin:26px auto 0;padding:26px 18px 0;text-align:center}
+.section h2{font-size:36px;margin:0;letter-spacing:-0.5px}
+.float-wa{position:fixed;right:18px;bottom:18px;width:60px;height:60px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;text-decoration:none;box-shadow:0 12px 30px rgba(37,211,102,0.45);z-index:80;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+#lightbox{position:fixed;inset:0;background:rgba(7,12,22,0.94);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;backdrop-filter:blur(12px)}
 #lightbox.active{display:flex}
-#lightbox img{max-width:95vw;max-height:90vh;border-radius:12px}
-#lightbox .close{position:absolute;top:18px;right:20px;color:#fff;font-size:34px;font-weight:700;cursor:pointer}
+#lightbox img{max-width:95vw;max-height:90vh;border-radius:16px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 80px rgba(0,0,0,0.5)}
+#lightbox .close{position:absolute;top:18px;right:20px;color:#fff;font-size:36px;font-weight:300;cursor:pointer;opacity:0.8}
 </style>
 </head>
 <body>
@@ -51,7 +59,7 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
   <div class="logo-wrap"><img src="logo.jpg" class="logo-img"><div class="logo">JABEES KITCHEN<small>FRESH • TASTY • FAST</small></div></div>
   <a href="https://wa.me/27691158137" class="wa-top">WhatsApp</a>
 </header>
-<div class="banner">🔥 FRESH DAILY • FAST DELIVERY • DURBAN • ORDER NOW ON WHATSAPP</div>
+<div class="banner">🔥 FRESH DAILY • FAST DELIVERY • ORDER NOW ON WHATSAPP</div>
 
 <div class="hero">
   <div class="hero-text">
@@ -79,16 +87,16 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 
 <div class="section"><h2>Our Best Sellers</h2><p style="color:#667085;font-size:13px">Jb1 to Jb10 • Fresh & Tasty</p></div>
 <div class="grid">
-  <div class="card"><img src="Jb1.jpg"><h3>Jabees Special 1</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb1">Order Jb1 on WhatsApp</a></div>
-  <div class="card"><img src="Jb2.jpg"><h3>Jabees Special 2</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb2">Order Jb2 on WhatsApp</a></div>
-  <div class="card"><img src="Jb3.jpg"><h3>Jabees Special 3</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb3">Order Jb3 on WhatsApp</a></div>
-  <div class="card"><img src="Jb4.jpg"><h3>Jabees Special 4</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb4">Order Jb4 on WhatsApp</a></div>
-  <div class="card"><img src="Jb5.jpg"><h3>Jabees Special 5</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb5">Order Jb5 on WhatsApp</a></div>
-  <div class="card"><img src="Jb6.jpg"><h3>Jabees Special 6</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb6">Order Jb6 on WhatsApp</a></div>
-  <div class="card"><img src="Jb7.jpg"><h3>Jabees Special 7</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb7">Order Jb7 on WhatsApp</a></div>
-  <div class="card"><img src="Jb8.jpg"><h3>Jabees Special 8</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb8">Order Jb8 on WhatsApp</a></div>
-  <div class="card"><img src="Jb9.jpg"><h3>Jabees Special 9</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb9">Order Jb9 on WhatsApp</a></div>
-  <div class="card"><img src="Jb10.jpg"><h3>Jabees Special 10</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20Jb10">Order Jb10 on WhatsApp</a></div>
+  <div class="card"><img src="Jb1.jpg"><h3>Jabees Special 1</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb1 on WhatsApp</a></div>
+  <div class="card"><img src="Jb2.jpg"><h3>Jabees Special 2</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb2 on WhatsApp</a></div>
+  <div class="card"><img src="Jb3.jpg"><h3>Jabees Special 3</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb3 on WhatsApp</a></div>
+  <div class="card"><img src="Jb4.jpg"><h3>Jabees Special 4</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb4 on WhatsApp</a></div>
+  <div class="card"><img src="Jb5.jpg"><h3>Jabees Special 5</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb5 on WhatsApp</a></div>
+  <div class="card"><img src="Jb6.jpg"><h3>Jabees Special 6</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb6 on WhatsApp</a></div>
+  <div class="card"><img src="Jb7.jpg"><h3>Jabees Special 7</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb7 on WhatsApp</a></div>
+  <div class="card"><img src="Jb8.jpg"><h3>Jabees Special 8</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb8 on WhatsApp</a></div>
+  <div class="card"><img src="Jb9.jpg"><h3>Jabees Special 9</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb9 on WhatsApp</a></div>
+  <div class="card"><img src="Jb10.jpg"><h3>Jabees Special 10</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb10 on WhatsApp</a></div>
 </div>
 
 <footer style="background:#101828;color:#B8C2D0;text-align:center;padding:30px 20px;margin-top:30px;font-size:12px;line-height:1.9">
@@ -113,4 +121,4 @@ lightbox.addEventListener('click',function(e){
 });
 </script>
 </body>
-</html>
+  </html>

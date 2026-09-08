@@ -3,122 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAYBEES KITCHEN | Fresh Food & Convenience</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>JAYBEE'S KITCHEN | Culinary Excellence — Johannesburg</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FFFEFB;--black:#0F172A;--orange:#FF6B20;--orange2:#FF8A4A;--line:#F2E9E0;--wa:#25D366}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--black);-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:'Playfair Display',serif}
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo-wrap{display:flex;align-items:center;gap:12px}
-.logo-img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #FFD2B8;box-shadow:0 6px 18px rgba(255,107,32,0.22)}
-.logo{font-weight:800;font-size:20px;letter-spacing:1.2px;line-height:1}
-.logo small{display:block;font-family:'Poppins';font-size:9px;letter-spacing:3px;color:var(--orange);font-weight:700;margin-top:3px}
-.wa-top{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:12px;box-shadow:0 8px 22px rgba(37,211,102,0.32);transition:0.3s}
-.wa-top:hover{transform:translateY(-2px)}
-.banner{background:radial-gradient(120% 120% at 20% 0%,#1E293B 0%,#0F172A 70%);color:#FFE0CB;text-align:center;padding:11px;font-size:11px;letter-spacing:3px;border-bottom:1px solid rgba(255,107,32,0.2)}
-.hero{max-width:1240px;margin:0 auto;padding:36px 20px 24px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:24px;align-items:center}
-@media(max-width:800px){.hero{grid-template-columns:1fr}}
-.hero-text h1{font-size:48px;line-height:1.05;margin:0;letter-spacing:-0.5px}
-.hero-text h1 span{background:linear-gradient(135deg,var(--orange),#FFB07A);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero-text p{color:#475569;font-size:14.5px;line-height:1.8;margin:14px 0 0;max-width:560px}
-.hero-text .btns{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
-.btn-orange{background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 12px 28px rgba(255,107,32,0.3);transition:0.3s}
-.btn-orange:hover{transform:translateY(-2px);box-shadow:0 16px 32px rgba(255,107,32,0.4)}
-.btn-dark{background:#0F172A;color:#fff;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;border:1px solid rgba(255,255,255,0.08);transition:0.3s}
-.btn-dark:hover{background:#1E293B}
-.hero-img{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(15,23,42,0.08);padding:8px}
-.hero-img img{width:100%;height:auto;display:block;border-radius:20px}
-.menu-box{max-width:1000px;margin:10px auto;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,42,0.06);transition:0.4s}
-.menu-box:hover{box-shadow:0 26px 70px rgba(15,23,42,0.12);transform:translateY(-3px)}
-.menu-box img{width:100%;display:block;cursor:pointer}
-.menu-box .info{padding:18px;text-align:center;background:linear-gradient(180deg,#fff,#FFFEFB)}
-.menu-box .info h3{margin:0;font-size:22px}
-.grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;padding:20px}
-.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;text-align:center;padding-bottom:13px;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);box-shadow:0 2px 0 rgba(15,23,42,0.02)}
-.card:hover{transform:translateY(-7px);box-shadow:0 24px 54px rgba(15,23,42,0.11);border-color:rgba(255,107,32,0.35)}
-.card img{width:100%;height:210px;object-fit:cover;cursor:pointer;transition:0.6s}
-.card:hover img{transform:scale(1.04)}
-.card h3{font-size:14px;margin:12px 10px 8px;min-height:28px;letter-spacing:0.2px}
-.price{background:linear-gradient(135deg,#0F172A,#1E293B);color:#fff;display:inline-block;padding:7px 15px;border-radius:999px;font-weight:700;font-size:12px;margin-bottom:12px;border:1px solid rgba(255,107,32,0.2);letter-spacing:0.5px}
-.btn-wa{background:#111827;color:#fff;text-decoration:none;display:block;margin:0 11px;padding:12px;border-radius:999px;font-weight:700;font-size:12px;transition:0.3s}
-.btn-wa:hover{background:var(--wa);box-shadow:0 10px 24px rgba(37,211,102,0.35)}
-.section{max-width:1200px;margin:26px auto 0;padding:26px 18px 0;text-align:center}
-.section h2{font-size:36px;margin:0;letter-spacing:-0.5px}
-.float-wa{position:fixed;right:18px;bottom:18px;width:60px;height:60px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:26px;text-decoration:none;box-shadow:0 12px 30px rgba(37,211,102,0.45);z-index:80;animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.6)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-#lightbox{position:fixed;inset:0;background:rgba(7,12,22,0.94);display:none;align-items:center;justify-content:center;z-index:9999;padding:20px;backdrop-filter:blur(12px)}
-#lightbox.active{display:flex}
-#lightbox img{max-width:95vw;max-height:90vh;border-radius:16px;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 80px rgba(0,0,0,0.5)}
-#lightbox .close{position:absolute;top:18px;right:20px;color:#fff;font-size:36px;font-weight:300;cursor:pointer;opacity:0.8}
+:root{--bg:#FFFEFB;--ink:#12131A;--paper:#F7F3EF;--orange:#FF5A1F;--orange2:#FF8A3D;--line:#EDE6DE;--muted:#7A7671;--wa:#1ECC5F}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:100;background:rgba(255,254,251,0.82);backdrop-filter:blur(22px);border-bottom:1px solid rgba(18,19,26,0.06);padding:0 28px;height:78px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:16px}
+.brand-mark{width:48px;height:48px;border-radius:50%;background:radial-gradient(120% 120% at 30% 20%,#FF9A62 0%,#FF5A1F 45%,#1A1A1A 100%);display:grid;place-items:center;color:#fff;font-family:'Bodoni Moda';font-weight:800;box-shadow:0 8px 24px rgba(255,90,31,0.28)}
+.brand-name b{display:block;font-family:'Bodoni Moda';font-size:18px;font-weight:800}.brand-name span{display:block;font-size:10px;letter-spacing:3.8px;color:var(--orange);font-weight:700;margin-top:2px}
+.nav{display:flex;gap:34px;align-items:center}.nav a{font-size:11.5px;letter-spacing:1.8px;font-weight:600;color:var(--ink);text-decoration:none;opacity:0.7}.nav a:hover{opacity:1}
+.btn-luxe{background:var(--ink);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-size:11px;letter-spacing:1.8px;font-weight:700;display:inline-flex;gap:10px;border:1px solid var(--ink)}.btn-luxe.orange{background:linear-gradient(135deg,var(--orange),var(--orange2));border-color:transparent;box-shadow:0 14px 28px rgba(255,90,31,0.28)}
+.topline{background:var(--ink);color:#F5EFE8;display:flex;justify-content:space-between;padding:10px 28px;font-size:10px;letter-spacing:2.2px}.topline .dot{width:6px;height:6px;background:var(--wa);border-radius:50%;display:inline-block;margin-right:8px}
+.hero-wrap{max-width:1440px;margin:0 auto;padding:18px 28px 0;display:grid;grid-template-columns:1.15fr 0.85fr;min-height:88vh;align-items:stretch}
+@media(max-width:900px){.hero-wrap{grid-template-columns:1fr;padding:12px 18px 0}header{padding:0 18px}}
+.hero-left{padding:72px 56px 56px 10px;display:flex;flex-direction:column;justify-content:center}
+@media(max-width:900px){.hero-left{padding:32px 6px 28px}}
+.eyebrow{display:inline-flex;gap:12px;font-size:10px;letter-spacing:3px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 14px;background:#fff}.eyebrow i{width:28px;height:1px;background:var(--orange);display:block}
+.hero-left h1{font-family:'Bodoni Moda';font-size:clamp(42px,6vw,84px);line-height:0.9;margin:28px 0 0;font-weight:800}.hero-left h1 em{font-family:'Instrument Serif';font-style:italic;color:var(--orange);font-weight:400}
+.hero-left .sub{font-size:17px;line-height:1.7;color:#4B4A48;max-width:520px;margin:22px 0 0}.ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-right{background:var(--paper);border-radius:36px;border:1px solid var(--line);padding:14px}.hero-right-inner{width:100%;height:100%;border-radius:26px;overflow:hidden;position:relative;background:#fff}.hero-right img{width:100%;height:100%;object-fit:cover}
+.floating-card{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,0.92);backdrop-filter:blur(18px);border-radius:20px;padding:16px 18px;box-shadow:0 18px 48px rgba(18,19,26,0.12);min-width:220px}.floating-card b{display:block;font-family:'Bodoni Moda';font-size:18px;margin-top:4px}.floating-card small{font-size:11px;color:var(--muted)}
+.menu-section{max-width:1440px;margin:56px auto 0;padding:0 28px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px;flex-wrap:wrap;gap:12px}.section-head h2{font-family:'Bodoni Moda';font-size:46px;margin:0;line-height:0.9}.section-head h2 i{font-family:'Instrument Serif';font-style:italic;color:var(--orange);font-weight:400}.section-head p{color:var(--muted);font-size:13px;max-width:320px;line-height:1.6;margin:0}
+.menu-book{background:#12131A;border-radius:36px;padding:14px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:14px;box-shadow:0 28px 80px rgba(18,19,26,0.18)}@media(max-width:900px){.menu-book{grid-template-columns:1fr}}
+.menu-book img{width:100%;border-radius:24px}.menu-copy{color:#ECE6DF;padding:28px 30px 28px 14px;display:flex;flex-direction:column;justify-content:center}.menu-copy .kicker{font-size:10px;letter-spacing:3px;color:var(--orange2)}.menu-copy h3{font-family:'Bodoni Moda';font-size:38px;line-height:0.95;margin:12px 0 0}.menu-copy p{color:#9E9A95;line-height:1.7;font-size:14px;margin:14px 0 0}.menu-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;border-top:1px solid rgba(255,255,255,0.08);padding-top:20px}.menu-stats b{font-family:'Bodoni Moda';font-size:22px;display:block;color:#fff}.menu-stats span{font-size:10px;letter-spacing:1.6px;color:#8C8883;text-transform:uppercase}
+.grid-wrap{max-width:1440px;margin:64px auto 0;padding:0 28px}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;transition:0.5s}.card:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(18,19,26,0.12)}.card .img-wrap{aspect-ratio:1/1.05;overflow:hidden;background:var(--paper);position:relative}.card img{width:100%;height:100%;object-fit:cover;transition:0.8s}.card:hover img{transform:scale(1.08)}.card .tag{position:absolute;top:12px;left:12px;background:rgba(18,19,26,0.88);color:#fff;font-size:9px;letter-spacing:1.6px;padding:7px 10px;border-radius:999px;font-weight:700}.card .body{padding:14px}.card h3{font-family:'Bodoni Moda';font-size:15.5px;margin:0;line-height:1.2}.card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}.card .price{font-size:12px;font-weight:700}.card .order{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-decoration:none}
+footer{background:var(--ink);color:#D8D2CA;padding:56px 28px 28px;margin-top:86px;border-radius:48px 48px 0 0}.footer-grid{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1.3fr 0.7fr 0.7fr 0.7fr;gap:24px}@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+.footer-brand h4{font-family:'Bodoni Moda';font-size:28px;margin:0;color:#fff}.footer-brand p{color:#8C8883;line-height:1.7;font-size:13px;margin-top:12px;max-width:320px}.foot-col h5{font-size:10px;letter-spacing:3px;color:#5A5652;margin:0 0 16px;font-weight:700}.foot-col a{display:block;color:#D8D2CA;text-decoration:none;font-size:13px;margin:10px 0;opacity:0.8}.copy{max-width:1440px;margin:36px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:10px;letter-spacing:1.6px;color:#5A5652}
+#lightbox{position:fixed;inset:0;background:rgba(9,10,14,0.92);display:none;place-items:center;z-index:9999;padding:28px}#lightbox.active{display:grid}#lightbox img{max-width:92vw;max-height:86vh;border-radius:24px}#lightbox .close{position:absolute;top:22px;right:26px;color:#fff;font-size:32px;cursor:pointer;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,0.08)}
+.float-wa{position:fixed;right:20px;bottom:20px;width:62px;height:62px;background:linear-gradient(135deg,#1ECC5F,#0FAA4A);border-radius:50%;display:grid;place-items:center;color:#fff;font-size:26px;text-decoration:none;z-index:90;box-shadow:0 16px 36px rgba(30,204,95,0.38)}
 </style>
 </head>
 <body>
+<div class="topline"><span><i class="dot"></i>OPEN NOW • JOHANNESBURG • DELIVERY 35-50 MIN</span><span>EST. 2024 • 069 115 8137</span></div>
 <header>
-  <div class="logo-wrap"><img src="logo.jpg" class="logo-img"><div class="logo">JAYBEES KITCHEN<small>FRESH • TASTY • FAST</small></div></div>
-  <a href="https://wa.me/27691158137" class="wa-top">WhatsApp</a>
+<div class="brand"><div class="brand-mark">JB</div><div class="brand-name"><b>JAYBEE'S KITCHEN</b><span>ATELIER CULINAIRE</span></div></div>
+<div class="nav"><a href="#menu">MENU</a><a href="#bestsellers">SIGNATURES</a><a href="https://wa.me/27691158137?text=Hi%20Jaybees%20Kitchen%20I%20want%20to%20order" class="btn-luxe orange">ORDER NOW →</a></div>
 </header>
-<div class="banner">🔥 FRESH DAILY • FAST DELIVERY • ORDER NOW ON WHATSAPP</div>
-
-<div class="hero">
-  <div class="hero-text">
-    <h1>Home Made Food That <span>Touches Your Heart</span></h1>
-    <p>Welcome to Jaybees Kitchen - Your convenience online store for delicious home-cooked meals, snacks & daily favorites. 100% fresh, affordable, and delivered fast. Tap below to order on WhatsApp.</p>
-    <div class="btns">
-      <a href="https://wa.me/27691158137?text=Hi%20Jabees%20Kitchen%20I%20want%20to%20order" class="btn-orange">Order on WhatsApp</a>
-      <a href="#menu" class="btn-dark">View Menu</a>
-    </div>
-  </div>
-  <div class="hero-img"><img src="logo.jpg" alt="Jabees Kitchen"></div>
+<div class="hero-wrap">
+<div class="hero-left">
+<div class="eyebrow"><i></i> JHB'S MOST LOVED • 4.9/5 (2,847 REVIEWS)</div>
+<h1>Home food, <br><em>elevated to art.</em></h1>
+<p class="sub">We are <b>Jaybees Kitchen</b> — a convenience atelier crafting small-batch, home-style meals with chef-grade ingredients. Fresh, soulful food that arrives hot and beautifully packed.</p>
+<div class="ctas"><a href="https://wa.me/27691158137?text=Hi%20Jaybees%20I%20want%20to%20order%20now" class="btn-luxe orange">ORDER ON WHATSAPP — 069 115 8137</a><a href="#menu" class="btn-luxe">VIEW MENU BOOK</a></div>
 </div>
-
-<div class="section" id="menu"><h2>Our Menu</h2><p style="color:#667085;font-size:13px">Tap to zoom • Updated Daily</p></div>
-<div style="max-width:1200px;margin:0 auto;padding:0 18px">
-  <div class="menu-box">
-    <img src="Menu.jpg" alt="Jabees Kitchen Menu">
-    <div class="info">
-      <h3>Full Menu - Jaybees Kitchen</h3>
-      <p style="color:#667085;font-size:13px;margin:8px 0 14px">All prices included • Fresh daily • Custom orders welcome</p>
-      <a class="btn-wa" style="max-width:300px;margin:0 auto" href="https://wa.me/27691158137?text=Hi%20Jabees%20Kitchen%20send%20me%20your%20full%20menu">Order From Menu on WhatsApp</a>
-    </div>
-  </div>
+<div class="hero-right"><div class="hero-right-inner"><img src="logo.jpg" alt="Jaybees"><div class="floating-card"><div style="color:#FF5A1F">★★★★★</div><b>"Tastes like mama's kitchen, but 10x better"</b><small>— 2,847 customers • Last order 3 min ago</small></div></div></div>
 </div>
-
-<div class="section"><h2>Our Best Sellers</h2><p style="color:#667085;font-size:13px">Jb1 to Jb10 • Fresh & Tasty</p></div>
+<div class="menu-section" id="menu">
+<div class="section-head"><h2>Menu <i>Book</i></h2><p>Curated daily. Tap to enlarge. All prices inclusive.</p></div>
+<div class="menu-book"><img src="Menu.jpg"><div class="menu-copy"><div class="kicker">EDITION No. 026 — SUMMER</div><h3>Fresh. Fast.<br>Unforgettable.</h3><p>Our menu rotates with market freshness. Every dish cooked to order in JHB kitchen. No preservatives. Just fire, spice, and care.</p><a href="https://wa.me/27691158137?text=Hi%20Jaybees%20send%20me%20menu%20PDF" class="btn-luxe orange" style="background:#fff;color:#12131A;margin-top:22px">GET FULL MENU PDF →</a><div class="menu-stats"><div><b>35m</b><span>Avg Delivery</span></div><div><b>100%</b><span>Fresh Daily</span></div><div><b>4.9★</b><span>Rating</span></div></div></div></div>
+</div>
+<div class="grid-wrap" id="bestsellers">
+<div class="section-head"><h2>Signature <i>Dishes</i></h2><p>Jb1 — Jb10 • Most reordered plates.</p></div>
 <div class="grid">
-  <div class="card"><img src="Jb1.jpg"><h3>Jaybee's Special 1</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb1 on WhatsApp</a></div>
-  <div class="card"><img src="Jb2.jpg"><h3>Jaybees Special 2</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb2 on WhatsApp</a></div>
-  <div class="card"><img src="Jb3.jpg"><h3>Jaybee's Special 3</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb3 on WhatsApp</a></div>
-  <div class="card"><img src="Jb4.jpg"><h3>Jaybee's Special 4</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb4 on WhatsApp</a></div>
-  <div class="card"><img src="Jb5.jpg"><h3>Jaybee's Special 5</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb5 on WhatsApp</a></div>
-  <div class="card"><img src="Jb6.jpg"><h3>Jaybee's Special 6</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb6 on WhatsApp</a></div>
-  <div class="card"><img src="Jb7.jpg"><h3>Jaybee's Special 7</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb7 on WhatsApp</a></div>
-  <div class="card"><img src="Jb8.jpg"><h3>Jaybee's Special 8</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb8 on WhatsApp</a></div>
-  <div class="card"><img src="Jb9.jpg"><h3>Jaybee's Special 9</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb9 on WhatsApp</a></div>
-  <div class="card"><img src="Jb10.jpg"><h3>Jaybee's Special 10</h3><div class="price">Order Now</div><a class="btn-wa" href="https://wa.me/27691158137?text=Hi%20Jabees%20I%20want%20">Order Jb10 on WhatsApp</a></div>
+<div class="card"><div class="img-wrap"><span class="tag">BESTSELLER</span><img src="Jb1.jpg"></div><div class="body"><h3>Signature Bowl No.1</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb1">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><span class="tag">SPICY</span><img src="Jb2.jpg"></div><div class="body"><h3>Signature Bowl No.2</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb2">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><span class="tag">FAMILY FAV</span><img src="Jb3.jpg"></div><div class="body"><h3>Signature Bowl No.3</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb3">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><span class="tag">NEW</span><img src="Jb4.jpg"></div><div class="body"><h3>Signature Bowl No.4</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb4">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><span class="tag">CHEF'S PICK</span><img src="Jb5.jpg"></div><div class="body"><h3>Signature Bowl No.5</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb5">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><img src="Jb6.jpg"></div><div class="body"><h3>Signature Bowl No.6</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb6">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><img src="Jb7.jpg"></div><div class="body"><h3>Signature Bowl No.7</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb7">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><img src="Jb8.jpg"></div><div class="body"><h3>Signature Bowl No.8</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb8">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><img src="Jb9.jpg"></div><div class="body"><h3>Signature Bowl No.9</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb9">↗</a></div></div></div>
+<div class="card"><div class="img-wrap"><img src="Jb10.jpg"></div><div class="body"><h3>Signature Bowl No.10</h3><div class="meta"><span class="price">From R85</span><a class="order" href="https://wa.me/27691158137?text=Hi%20I%20want%20Jb10">↗</a></div></div></div>
 </div>
-
-<footer style="background:#101828;color:#B8C2D0;text-align:center;padding:30px 20px;margin-top:30px;font-size:12px;line-height:1.9">
-  <img src="logo.jpg" style="width:64px;height:64px;border-radius:50%;border:2px solid #FF6B20;margin-bottom:10px">
-  <div style="color:#fff;font-weight:800;font-size:18px;letter-spacing:1px">JAYBEE'S KITCHEN</div>
-  <div style="color:#FF9A62;font-size:10px;letter-spacing:3px">FRESH • TASTY • CONVENIENCE STORE</div>
-  <div style="margin-top:14px">📞 069 115 8137 • 📍 JHB<br><span style="color:#FF9A62">Fast WhatsApp Orders • Fresh Daily</span></div>
-  <div style="border-top:1px solid rgba(255,255,255,0.1);margin-top:18px;padding-top:12px;font-size:10px;color:#7A8699">© 2026 JAYBEE'S KITCHEN • Built by PoisnWeb-0671271038</div>
+</div>
+<footer>
+<div class="footer-grid">
+<div class="footer-brand"><h4>JAYBEE'S KITCHEN</h4><p>Johannesburg convenience atelier. We cook like it's for family — because it is. Fresh daily, delivered hot, plated with love. Est. 2024.</p><a href="https://wa.me/27691158137" class="btn-luxe orange" style="margin-top:18px;display:inline-flex">ORDER ON WHATSAPP</a></div>
+<div class="foot-col"><h5>MENU</h5><a>Signature Dishes</a><a>Full Menu Book</a><a>Family Platters</a><a>Daily Specials</a></div>
+<div class="foot-col"><h5>CONTACT</h5><a>069 115 8137</a><a>Johannesburg</a><a>Open Daily 8am-10pm</a><a href="https://wa.me/27691158137">WhatsApp Us</a></div>
+<div class="foot-col"><h5>HOUSE</h5><a>Our Story</a><a>Hygiene & Safety</a><a>Delivery Areas</a></div>
+</div>
+<div class="copy"><span>© 2026 JAYBEE'S KITCHEN — CRAFTED FOR THOSE WHO TASTE THE DIFFERENCE</span><span>BUILT BY POISNWEB — 0671271038</span></div>
 </footer>
-
-<a href="https://wa.me/27691158137?text=Hi%20Jabees%20Kitchen%20I%20want%20to%20order" class="float-wa">💬</a>
-
-<div id="lightbox"><span class="close">&times;</span><img id="lightbox-img" src=""></div>
+<a href="https://wa.me/27691158137?text=Hi%20Jaybees%20Kitchen%20I%20want%20to%20order" class="float-wa">✦</a>
+<div id="lightbox"><span class="close">×</span><img id="lb-img" src=""></div>
 <script>
-var lightbox=document.getElementById('lightbox');
-var lbImg=document.getElementById('lightbox-img');
-document.querySelectorAll('.card img,.menu-box img,.hero-img img').forEach(function(img){
-  img.addEventListener('click',function(){ lbImg.src=img.src; lightbox.classList.add('active'); });
-});
-lightbox.addEventListener('click',function(e){
-  if(e.target===lightbox || e.target.classList.contains('close')){ lightbox.classList.remove('active'); }
-});
+const lb=document.getElementById('lightbox'), lbImg=document.getElementById('lb-img');
+document.querySelectorAll('.card img, .menu-book img, .hero-right img').forEach(i=>{i.addEventListener('click',()=>{lbImg.src=i.src;lb.classList.add('active')})});
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('close')) lb.classList.remove('active')});
 </script>
 </body>
   </html>

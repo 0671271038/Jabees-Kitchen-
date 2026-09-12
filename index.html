@@ -6,56 +6,58 @@
 <title>JAYBEE'S KITCHEN | Johannesburg</title>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FFFEFB;--ink:#12131A;--paper:#F7F3EF;--orange:#FF5A1F;--orange2:#FF8A3D;--line:#EDE6DE;--muted:#7A7671;--wa:#1ECC5F}
+:root{--bg:#FFFCF7;--ink:#121212;--paper:#F6F0E8;--orange:#C8A86A;--orange2:#E8C78A;--line:#E9E0D3;--muted:#8A847E;--wa:#1ECC5F}
 *{box-sizing:border-box}
 html,body{overflow-x:hidden;width:100%}
 body{margin:0;font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
-header{position:sticky;top:0;z-index:100;background:rgba(255,254,251,0.92);backdrop-filter:blur(22px);border-bottom:1px solid rgba(18,19,26,0.06);padding:0 14px;height:64px;display:flex;justify-content:space-between;align-items:center}
+header{position:sticky;top:0;z-index:100;background:rgba(255,252,247,0.92);backdrop-filter:blur(22px);border-bottom:1px solid rgba(18,19,26,0.06);padding:0 14px;height:64px;display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:10px;min-width:0}
-.brand-mark{width:40px;height:40px;min-width:40px;border-radius:50%;background:radial-gradient(120% 120% at 30% 20%,#FF9A62 0%,#FF5A1F 45%,#1A1A1A 100%);display:grid;place-items:center;color:#fff;font-family:'Bodoni Moda';font-weight:800;font-size:14px}
+.brand-mark{width:40px;height:40px;min-width:40px;border-radius:50%;background:radial-gradient(120% 120% at 30% 20%,#E8C78A 0%,#C8A86A 45%,#121212 100%);display:grid;place-items:center;color:#fff;font-family:'Bodoni Moda';font-weight:800;font-size:14px;box-shadow:0 6px 16px rgba(200,168,106,0.35)}
 .brand-name{line-height:1;min-width:0}
-.brand-name b{display:block;font-family:'Bodoni Moda';font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-name b{display:block;font-family:'Bodoni Moda';font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-0.02em}
 .brand-name span{display:block;font-size:8px;letter-spacing:2.5px;color:var(--orange);font-weight:700;margin-top:2px}
 .nav{display:flex;gap:12px;align-items:center}
 .nav a.link{display:none}
 @media(min-width:800px){.nav a.link{display:block;font-size:11px;letter-spacing:1.8px;font-weight:600;color:var(--ink);text-decoration:none;opacity:0.7}}
-.btn-luxe{background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-size:10px;letter-spacing:1.5px;font-weight:700;display:inline-flex;gap:8px;border:1px solid var(--ink);white-space:nowrap}
-.btn-luxe.orange{background:linear-gradient(135deg,var(--orange),var(--orange2));border-color:transparent;box-shadow:0 8px 20px rgba(255,90,31,0.28)}
-.topline{background:var(--ink);color:#F5EFE8;display:flex;justify-content:space-between;padding:8px 14px;font-size:9px;letter-spacing:1.5px;gap:10px}
-.topline span:last-child{opacity:0.7;white-space:nowrap}
-.topline .dot{width:5px;height:5px;background:var(--wa);border-radius:50%;display:inline-block;margin-right:6px}
+.btn-luxe{background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-size:10px;letter-spacing:1.5px;font-weight:700;display:inline-flex;gap:8px;border:1px solid var(--ink);white-space:nowrap;transition:0.3s}
+.btn-luxe.orange{background:linear-gradient(135deg,#121212,#2A2A2A);border-color:#C8A86A;box-shadow:0 8px 20px rgba(18,18,18,0.25), inset 0 1px 0 rgba(200,168,106,0.3)}
+.btn-luxe.orange::after{content:"";width:16px;height:16px;background:var(--orange);mask: linear-gradient(#000 0 0)}
+.topline{background:var(--ink);color:#E9E0D3;display:flex;justify-content:space-between;padding:8px 14px;font-size:9px;letter-spacing:1.5px;gap:10px;border-bottom:1px solid rgba(200,168,106,0.15)}
+.topline span:last-child{opacity:0.7;white-space:nowrap;color:var(--orange2)}
+.topline .dot{width:5px;height:5px;background:var(--orange);border-radius:50%;display:inline-block;margin-right:6px;box-shadow:0 0 8px var(--orange)}
 .hero-wrap{max-width:1440px;margin:0 auto;padding:0 14px;display:grid;grid-template-columns:1.15fr 0.85fr;align-items:stretch}
 @media(max-width:900px){.hero-wrap{grid-template-columns:1fr}}
 .hero-left{padding:24px 0 24px 0;display:flex;flex-direction:column;justify-content:center}
-.eyebrow{display:inline-flex;gap:8px;font-size:8.5px;letter-spacing:2px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:#fff;align-items:center;max-width:100%}
+.eyebrow{display:inline-flex;gap:8px;font-size:8.5px;letter-spacing:2px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:#fff;align-items:center;max-width:100%;box-shadow:0 2px 10px rgba(18,18,18,0.04)}
 .eyebrow i{width:20px;height:1px;background:var(--orange);display:block}
 .hero-left h1{font-family:'Bodoni Moda';font-size:clamp(32px,9vw,84px);line-height:0.92;margin:18px 0 0;font-weight:800;letter-spacing:-0.03em;word-break:break-word}
 .hero-left h1 em{font-family:'Instrument Serif';font-style:italic;color:var(--orange);font-weight:400}
 .hero-left .sub{font-size:15px;line-height:1.6;color:#4B4A48;max-width:520px;margin:16px 0 0}
 .ctas{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
 .ctas .btn-luxe{padding:14px 20px;font-size:11px}
-.hero-right{background:var(--paper);border-radius:28px;border:1px solid var(--line);padding:10px;margin-top:14px}
-.hero-right-inner{width:100%;border-radius:20px;overflow:hidden;position:relative;background:#fff;aspect-ratio:1/0.9}
-.hero-right img{width:100%;height:100%;object-fit:cover;display:block}
-.floating-card{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);border-radius:16px;padding:12px 14px;box-shadow:0 12px 32px rgba(18,19,26,0.12);min-width:0;max-width:88%}
-.floating-card b{display:block;font-family:'Bodoni Moda';font-size:13px;margin-top:2px;line-height:1.2}
-.floating-card small{font-size:10px;color:var(--muted);display:block;margin-top:2px}
+.ctas .btn-luxe.orange{background:linear-gradient(135deg,#C8A86A,#E8C78A);color:#121212;border-color:transparent;box-shadow:0 10px 24px rgba(200,168,106,0.35)}
+.hero-right{background:linear-gradient(180deg,#F6F0E8 0%,#FFFCF7 100%);border-radius:28px;border:1px solid var(--line);padding:10px;margin-top:14px;box-shadow:0 20px 50px rgba(18,18,18,0.06)}
+.hero-right-inner{width:100%;border-radius:20px;overflow:hidden;position:relative;background:#fff;aspect-ratio:1/0.9;border:1px solid var(--line)}
+.hero-right img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(0.95) contrast(1.05)}
+.floating-card{position:absolute;left:10px;bottom:10px;background:rgba(18,18,18,0.92);backdrop-filter:blur(14px);border-radius:16px;padding:12px 14px;box-shadow:0 12px 32px rgba(18,19,26,0.22);min-width:0;max-width:88%;border:1px solid rgba(200,168,106,0.2)}
+.floating-card b{display:block;font-family:'Bodoni Moda';font-size:13px;margin-top:2px;line-height:1.2;color:#fff}
+.floating-card small{font-size:10px;color:#9E9A95;display:block;margin-top:2px}
 .menu-section{max-width:1440px;margin:32px auto 0;padding:0 14px}
 .section-head{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
 @media(min-width:600px){.section-head{flex-direction:row;justify-content:space-between;align-items:end}}
 .section-head h2{font-family:'Bodoni Moda';font-size:32px;margin:0;line-height:0.9}.section-head h2 i{font-family:'Instrument Serif';font-style:italic;color:var(--orange);font-weight:400}.section-head p{color:var(--muted);font-size:12px;max-width:320px;line-height:1.5;margin:0}
-.menu-book{background:#12131A;border-radius:24px;padding:10px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:10px;box-shadow:0 18px 50px rgba(18,19,26,0.18)}
+.menu-book{background:#121212;border-radius:24px;padding:10px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:10px;box-shadow:0 18px 50px rgba(18,19,26,0.28);border:1px solid rgba(200,168,106,0.15)}
 @media(max-width:800px){.menu-book{grid-template-columns:1fr}}
-.menu-book img{width:100%;border-radius:16px;display:block}.menu-copy{color:#ECE6DF;padding:16px 14px;display:flex;flex-direction:column;justify-content:center}.menu-copy .kicker{font-size:9px;letter-spacing:3px;color:var(--orange2)}.menu-copy h3{font-family:'Bodoni Moda';font-size:26px;line-height:0.95;margin:10px 0 0}.menu-copy p{color:#9E9A95;line-height:1.6;font-size:13px;margin:10px 0 0}.menu-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;border-top:1px solid rgba(255,255,255,0.08);padding-top:14px}.menu-stats b{font-family:'Bodoni Moda';font-size:18px;display:block;color:#fff}.menu-stats span{font-size:9px;letter-spacing:1.2px;color:#8C8883;text-transform:uppercase}
+.menu-book img{width:100%;border-radius:16px;display:block}.menu-copy{color:#ECE6DF;padding:16px 14px;display:flex;flex-direction:column;justify-content:center}.menu-copy .kicker{font-size:9px;letter-spacing:3px;color:var(--orange2)}.menu-copy h3{font-family:'Bodoni Moda';font-size:26px;line-height:0.95;margin:10px 0 0;color:#FFFCF7}.menu-copy p{color:#9E9A95;line-height:1.6;font-size:13px;margin:10px 0 0}.menu-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;border-top:1px solid rgba(255,255,255,0.08);padding-top:14px}.menu-stats b{font-family:'Bodoni Moda';font-size:18px;display:block;color:#fff}.menu-stats span{font-size:9px;letter-spacing:1.2px;color:#8C8883;text-transform:uppercase}
 .grid-wrap{max-width:1440px;margin:32px auto 0;padding:0 14px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 @media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1100px){.grid{grid-template-columns:repeat(5,1fr)}}
-.card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:0.4s}.card .img-wrap{aspect-ratio:1/1.05;overflow:hidden;background:var(--paper);position:relative}.card img{width:100%;height:100%;object-fit:cover}.card .tag{position:absolute;top:8px;left:8px;background:rgba(18,19,26,0.88);color:#fff;font-size:8px;letter-spacing:1.2px;padding:5px 8px;border-radius:999px;font-weight:700}.card .body{padding:10px}.card h3{font-family:'Bodoni Moda';font-size:13px;margin:0;line-height:1.2}.card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.card .price{font-size:9px;letter-spacing:1px;color:var(--muted);font-weight:600;text-transform:uppercase}.card .order{width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;text-decoration:none;font-size:13px}
-footer{background:var(--ink);color:#D8D2CA;padding:32px 14px 18px;margin-top:48px;border-radius:28px 28px 0 0}.footer-grid{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(min-width:800px){.footer-grid{grid-template-columns:1.3fr 0.7fr 0.7fr 0.7fr}}
-.footer-brand h4{font-family:'Bodoni Moda';font-size:22px;margin:0;color:#fff}.footer-brand p{color:#8C8883;line-height:1.6;font-size:12px;margin-top:10px;max-width:320px}.foot-col h5{font-size:9px;letter-spacing:2.5px;color:#5A5652;margin:0 0 10px;font-weight:700}.foot-col a{display:block;color:#D8D2CA;text-decoration:none;font-size:12px;margin:8px 0;opacity:0.8}.copy{max-width:1440px;margin:24px auto 0;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;gap:6px;font-size:9px;letter-spacing:1.2px;color:#5A5652}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:0.4s;box-shadow:0 8px 24px rgba(18,18,18,0.04)}.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(18,18,18,0.12);border-color:var(--orange)}.card .img-wrap{aspect-ratio:1/1.05;overflow:hidden;background:var(--paper);position:relative}.card img{width:100%;height:100%;object-fit:cover}.card .tag{position:absolute;top:8px;left:8px;background:rgba(18,18,18,0.92);color:var(--orange2);font-size:8px;letter-spacing:1.2px;padding:5px 8px;border-radius:999px;font-weight:700;border:1px solid rgba(200,168,106,0.25)}.card .body{padding:10px}.card h3{font-family:'Bodoni Moda';font-size:13px;margin:0;line-height:1.2}.card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.card .price{font-size:9px;letter-spacing:1px;color:var(--muted);font-weight:600;text-transform:uppercase}.card .order{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--orange2);display:grid;place-items:center;text-decoration:none;font-size:13px;border:1px solid rgba(200,168,106,0.2)}
+footer{background:var(--ink);color:#D8D2CA;padding:32px 14px 18px;margin-top:48px;border-radius:28px 28px 0 0;border-top:1px solid rgba(200,168,106,0.15)}.footer-grid{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(min-width:800px){.footer-grid{grid-template-columns:1.3fr 0.7fr 0.7fr 0.7fr}}
+.footer-brand h4{font-family:'Bodoni Moda';font-size:22px;margin:0;color:#fff;letter-spacing:-0.02em}.footer-brand p{color:#8C8883;line-height:1.6;font-size:12px;margin-top:10px;max-width:320px}.foot-col h5{font-size:9px;letter-spacing:2.5px;color:var(--orange);margin:0 0 10px;font-weight:700}.foot-col a{display:block;color:#D8D2CA;text-decoration:none;font-size:12px;margin:8px 0;opacity:0.8}.copy{max-width:1440px;margin:24px auto 0;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;gap:6px;font-size:9px;letter-spacing:1.2px;color:#5A5652}
 @media(min-width:600px){.copy{flex-direction:row;justify-content:space-between}}
-#lightbox{position:fixed;inset:0;background:rgba(9,10,14,0.92);display:none;place-items:center;z-index:9999;padding:14px}#lightbox.active{display:grid}#lightbox img{max-width:92vw;max-height:86vh;border-radius:16px}#lightbox .close{position:absolute;top:14px;right:14px;color:#fff;font-size:28px;cursor:pointer;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,0.1)}
-.float-wa{position:fixed;right:14px;bottom:14px;width:56px;height:56px;background:linear-gradient(135deg,#1ECC5F,#0FAA4A);border-radius:50%;display:grid;place-items:center;color:#fff;font-size:24px;text-decoration:none;z-index:90;box-shadow:0 12px 28px rgba(30,204,95,0.38)}
+#lightbox{position:fixed;inset:0;background:rgba(9,10,14,0.92);display:none;place-items:center;z-index:9999;padding:14px}#lightbox.active{display:grid}#lightbox img{max-width:92vw;max-height:86vh;border-radius:16px;border:1px solid rgba(200,168,106,0.2)}#lightbox .close{position:absolute;top:14px;right:14px;color:#fff;font-size:28px;cursor:pointer;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,0.1)}
+.float-wa{position:fixed;right:14px;bottom:14px;width:56px;height:56px;background:linear-gradient(135deg,#C8A86A,#E8C78A);border-radius:50%;display:grid;place-items:center;color:#121212;font-size:24px;text-decoration:none;z-index:90;box-shadow:0 12px 28px rgba(200,168,106,0.38);border:1px solid rgba(255,255,255,0.4)}
 </style>
 </head>
 <body>
@@ -78,11 +80,11 @@ footer{background:var(--ink);color:#D8D2CA;padding:32px 14px 18px;margin-top:48p
 <a href="#menu" class="btn-luxe">VIEW MENU BOOK</a>
 </div>
 </div>
-<div class="hero-right"><div class="hero-right-inner"><img src="logo.jpg" alt="Jaybees"><div class="floating-card"><div style="color:#FF5A1F">★★★★★</div><b>"Tastes like mama's kitchen, but 10x better"</b><small>— 2,847 customers • 3 min ago</small></div></div></div>
+<div class="hero-right"><div class="hero-right-inner"><img src="logo.jpg" alt="Jaybees"><div class="floating-card"><div style="color:var(--orange)">★★★★★</div><b>"Tastes like mama's kitchen, but 10x better"</b><small>— 2,847 customers • 3 min ago</small></div></div></div>
 </div>
 <div class="menu-section" id="menu">
 <div class="section-head"><h2>Menu <i>Book</i></h2><p>Curated daily. Tap to enlarge.</p></div>
-<div class="menu-book"><img src="Menu.jpg"><div class="menu-copy"><div class="kicker">EDITION No. 026 — SUMMER</div><h3>Fresh. Fast.<br>Unforgettable.</h3><p>Our menu rotates with market freshness. Cooked to order in JHB. No preservatives.</p><a href="https://wa.me/27691158137?text=Hi%20Jaybees%20send%20me%20menu%20PDF" class="btn-luxe orange" style="background:#fff;color:#12131A;margin-top:16px">GET MENU PDF →</a><div class="menu-stats"><div><b>35m</b><span>Avg Delivery</span></div><div><b>100%</b><span>Fresh Daily</span></div><div><b>4.9★</b><span>Rating</span></div></div></div></div>
+<div class="menu-book"><img src="Menu.jpg"><div class="menu-copy"><div class="kicker">EDITION No. 026 — SUMMER</div><h3>Fresh. Fast.<br>Unforgettable.</h3><p>Our menu rotates with market freshness. Cooked to order in JHB. No preservatives.</p><a href="https://wa.me/27691158137?text=Hi%20Jaybees%20send%20me%20menu%20PDF" class="btn-luxe orange" style="background:#fff;color:#12131A;margin-top:16px;border-color:var(--line)">GET MENU PDF →</a><div class="menu-stats"><div><b>35m</b><span>Avg Delivery</span></div><div><b>100%</b><span>Fresh Daily</span></div><div><b>4.9★</b><span>Rating</span></div></div></div></div>
 </div>
 <div class="grid-wrap" id="bestsellers">
 <div class="section-head"><h2>Signature <i>Dishes</i></h2><p>Jb1 — Jb10 • Tap to order.</p></div>
@@ -116,4 +118,4 @@ document.querySelectorAll('.card img, .menu-book img, .hero-right img').forEach(
 lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('close')) lb.classList.remove('active')});
 </script>
 </body>
-                                                                                                                                             </html>
+</html>
